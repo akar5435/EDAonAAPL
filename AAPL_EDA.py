@@ -14,7 +14,7 @@ chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 # Load the dataset
 df = pd.read_csv('C:/python/AppleEDA/AAPL.csv', parse_dates=['Date'], index_col='Date')
 
-# Handle missing values (example: forward fill)
+# Handle missing values
 df.fillna(method='ffill', inplace=True)
 
 # Ensure the data is sorted by date
